@@ -1,4 +1,4 @@
-# Textbook GPT API
+# Chat interface
 ## Why is it needed?
 
 
