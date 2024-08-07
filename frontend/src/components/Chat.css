@@ -1,0 +1,145 @@
+.container {
+    display: flex;
+    color:black;
+    flex: 1;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.sidebar {
+    width: 250px;
+    height:85vh;
+    background: #f9f9f9;
+    border-right: 1px solid #e0e0e0;
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.search-history {
+    list-style: none;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.search-history li {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-history li:hover {
+    background-color: #e0e0e0;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.chat-box {
+    background: #fff;
+    width: 100%;
+    max-width: 700px;
+    height: 80vh;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: auto;
+    border: 1px solid #e0e0e0;
+}
+
+.messages {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background: #f9f9f9;
+}
+
+.input-box {
+    display: flex;
+    padding: 10px;
+    background: #eef1f5;
+    border-top: 1px solid #e0e0e0;
+    align-items: center; /* Added this line */
+}
+
+textarea[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    background: #fff;
+    font-size: 14px;
+    color:black;
+    width:100%;
+    resize:none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    line-height: 2;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #0066cc;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #004999;
+}
+
+.message {
+    padding: 15px 15px;
+    margin: 15px 10px;
+    border-radius: 20px;
+    max-width: 100%;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.user-message {
+    background-color: #0066cc;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.ai-message {
+    background-color: #eef1f5;
+    color: black;
+    align-self: flex-start;
+    border: 1px solid #ddd;
+}
+
+.word-limit-note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+}
