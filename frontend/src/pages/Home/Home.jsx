@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
         <Hero />
-        <ImageSlider />
+        {/* <ImageSlider /> */}
     </>
   )
 }
