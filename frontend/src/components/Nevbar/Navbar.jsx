@@ -15,9 +15,9 @@ const Navbar = () => {
             <a href='/'>About Us</a>
             <a href='/'>Contact Us</a>
         </div>
-        <div className='nav-login-signup'>
+        {/* <div className='nav-login-signup'>
             <div className='login-btn'>Sign in</div>
-        </div>
+        </div> */}
       </div>
       {/* <div className='navbar-bottem'>
         <p>Are your school student for an online learning?</p>

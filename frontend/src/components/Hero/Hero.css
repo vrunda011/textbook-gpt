@@ -114,3 +114,7 @@
     left: -50px;
     z-index: -1;
 }
+.login-link{
+    text-decoration: none;
+    color: inherit;
+}

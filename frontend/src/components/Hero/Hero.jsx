@@ -4,6 +4,7 @@ import hero_right_1 from "../../assets/Images/left1.jpeg"
 import hero_right_2 from "../../assets/Images/left2.jpeg"
 import hero_right_3 from "../../assets/Images/left3.jpeg"
 import hero_right_4 from "../../assets/Images/left4.jpeg"
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -17,7 +18,7 @@ const Hero = () => {
                 <p className='hero-left-h3'>completely tailored to your syllabus</p>
             </div>
             <div className='hero-left-btn'>
-                <div>Get Started</div>
+                <Link to="/login" className='login-link'><div>Get Started</div></Link>
                 {/* <div>See How it works</div> */}
             </div>
         </div>

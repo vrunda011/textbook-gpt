@@ -3,10 +3,11 @@
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 20px;
     margin-top: 20px;
     z-index: 100;
+    margin-left: 100px;
 }
 
 .nav-links{

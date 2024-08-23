@@ -56,7 +56,7 @@ function Chat(props) {
   };
 
   return (
-    <div className="container">
+    <div className="container" style={{backgroundImage:`url('/images/standard${location.state.id}.jpg')`,backgroundSize:'cover'}}>
       <div className="sidebar" id="sidebar" >
         <h3>Search History</h3>
         <ul id="search-history" className="search-history">
