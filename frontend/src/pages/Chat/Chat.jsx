@@ -2,6 +2,8 @@ import './Chat.css';
 import {useLocation} from 'react-router-dom';
 import React, { useState, useRef, useEffect } from 'react';
 
+const chatApiBaseUrl =  "http://localhost:5000/api/chat/"
+
 function Chat(props) {
   const location = useLocation();
   const [inputValue, setInputValue] = useState('');
@@ -25,7 +27,7 @@ function Chat(props) {
     setRows(Math.min(lines, 5));
   };
 
-  const sendMessage = () => {
+  const sendMessage = async () => {
     const userInput = inputValue.trim();
     if (userInput === '') return;
 
@@ -34,9 +36,18 @@ function Chat(props) {
 
     addToSearchHistory(userInput);
 
-    // Simulate AI response (replace with your chatbot logic)
-    const aiResponse = createAIResponse("This is a simulated response.");
-    setMessages((prevMessages) => [...prevMessages, aiResponse]);
+    // Make API call to Flask server
+    const response = await fetch(chatApiBaseUrl + `${userInput}`);
+
+    // Check for successful response
+    if (response.ok) {
+      const apiResponse = await response.json();
+      const aiResponse = createAIResponse(apiResponse);
+      setMessages((prevMessages) => [...prevMessages, aiResponse]);
+    } else {
+      console.error('Error fetching response from API');
+      // Handle error gracefully, e.g., display an error message
+    }
 
     // Clear the input field
     setInputValue('');

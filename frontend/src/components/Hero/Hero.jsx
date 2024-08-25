@@ -10,12 +10,13 @@ const Hero = () => {
   return (
     <div className='hero-section'>
       <div className='hero-left'>
-        <p className='hero-left-start'>100% SATISFACTION GUARANTEE</p>
-        <p className='hero-left-h1'>Your doubt </p>
-        <p className='hero-left-h1'>support assistant</p>
+        
+        <p className='hero-left-h1'>Your 24/7</p>
+        <p className='hero-left-h1'>Learning</p>
+        <p className='hero-left-h1'>Helper</p>
         <div className='hero-left-second'>
           <p className='hero-left-h3'>Get your doubts solved anytime, anywhere.</p>
-          <p className='hero-left-h3'>Completely tailored to your syllabus</p>
+          <p className='hero-left-h3'>Completely tailored to your syllabus.</p>
         </div>
         <div className='hero-left-btn'>
           <Link to="/standard" className='login-link'><div>Get Started</div></Link>
