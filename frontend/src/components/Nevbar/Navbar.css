@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,41 +10,40 @@
     margin-left: 100px;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 600px;
 }
 
-.nav-links a{
+.nav-links a {
     text-decoration: none;
     color: black;
     cursor: pointer;
 }
 
-.nav-logo{
+.nav-logo {
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-left: -50px;
+    margin-left:-50px;
 }
 
-.nav-logo a{
+.nav-logo a {
     text-decoration: none;
     color: black;
     font-size: 25px;
     font-weight: 600;
-    margin-top: 10px;
     cursor: pointer;
 }
 
-.nav-logo-img{
+.nav-logo-img {
     width: 50px;
     height: 50px;
 }
 
-.login-btn{
+.login-btn {
     width: 130px;
     height: 50px;
     background: rgb(0, 21, 255);
@@ -56,7 +55,79 @@
     cursor: pointer;
 }
 
-.navbar-bottem{
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 10px;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .nav-logo a {
+        font-size: 20px;
+    }
+
+    .login-btn {
+        width: 100px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        padding: 8px 0;
+        font-size: 12px;
+    }
+
+    .nav-logo a {
+        font-size: 18px;
+    }
+
+    .login-btn {
+        width: 90px;
+        height: 35px;
+    }
+}
+
+.navbar-bottem {
     background: rgb(255, 217, 0);
     font-family: "Poppins", sans-serif;
     display: flex;
@@ -66,6 +137,6 @@
     font-weight: 600;
 }
 
-.navbar-bottem-blue{
+.navbar-bottem-blue {
     color: blue;
 }
