@@ -60,7 +60,7 @@ function Chat(props) {
       <div className="sidebar" id="sidebar" >
         <h3>Search History</h3>
         <ul id="search-history" className="search-history">
-          {searchHistory.map((search, index) => (
+          {searchHistory.slice().reverse().map((search, index) => (
             <li key={index}>{search}</li>
           ))}
         </ul>

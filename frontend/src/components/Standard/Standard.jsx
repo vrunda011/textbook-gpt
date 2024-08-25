@@ -1,10 +1,11 @@
 import './Standard.css';
 import React, { useEffect, useState } from 'react';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Standard() {
   const [standards, setStandards] = useState([]);
   const navigate = useNavigate();
+
   useEffect(() => {
     const standardsArray = [];
     for (let i = 1; i <= 12; i++) {
@@ -18,15 +19,12 @@ function Standard() {
     setStandards(standardsArray);
   }, []);
 
-  const toComponent=(d)=>{
-    navigate('/chat',{state:{id:d}})
-  }
+  const toComponent = (id) => {
+    navigate('/chat', { state: { id } });
+  };
 
   return (
     <div className='container home-container'>
-      {/* <div className="home-image">
-        <img src='/images/homepage-attractive-image.jpg' alt="main image" />
-      </div> */}
       <div className="home-text">
         <h1>Welcome to Textbook GPT</h1>
         <p>Your personalized AI tutor for seamless learning experiences.</p>
@@ -35,7 +33,7 @@ function Standard() {
             <div
               key={standard.id}
               className="standard-box"
-              onClick={()=>{toComponent(standard.id)}}
+              onClick={() => toComponent(standard.id)}
             >
               <img src={standard.imgSrc} alt={standard.label} />
               <span>{standard.label}</span>
@@ -44,6 +42,7 @@ function Standard() {
         </div>
       </div>
     </div>
-  )
+  );
 }
+
 export default Standard;
