@@ -1,7 +1,7 @@
 // src/components/Navbar/Navbar.js
 import React from 'react';
 import './Navbar.css';
-import nav_logo from '../../assets/Images/Textbook.png';
+import nav_logo from '../../assets/Images/logo.gif';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
         <Link to='/'>Home</Link>
         <Link to='/'>About Us</Link>
         <Link to='/'>Contact Us</Link>
-        <Link to='/login'>Login/Signup</Link>
+        <Link to='/login'>Login</Link>
       </div>
     </div>
   );

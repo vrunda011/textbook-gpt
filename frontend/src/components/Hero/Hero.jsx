@@ -1,22 +1,20 @@
 import React from 'react';
 import './Hero.css';
-import hero_right_1 from '../../assets/Images/left1.jpeg';
-import hero_right_2 from '../../assets/Images/left2.jpeg';
-import hero_right_3 from '../../assets/Images/left3.jpeg';
-import hero_right_4 from '../../assets/Images/left4.jpeg';
+import hero_right_1 from '../../assets/Images/img7.png';
+import hero_right_2 from '../../assets/Images/img4.png';
+import hero_right_3 from '../../assets/Images/img8.png';
+import hero_right_4 from '../../assets/Images/img6.png';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
     <div className='hero-section'>
       <div className='hero-left'>
-        
-        <p className='hero-left-h1'>Your 24/7</p>
-        <p className='hero-left-h1'>Learning</p>
-        <p className='hero-left-h1'>Helper</p>
+        <p className='hero-left-h1'>Too Shy to</p>
+        <p className='hero-left-h1'>Ask in Class?</p>
+        <p className='hero-left-h2'>Let Textbook GPT Be Your Guide!</p>
         <div className='hero-left-second'>
-          <p className='hero-left-h3'>Get your doubts solved anytime, anywhere.</p>
-          <p className='hero-left-h3'>Completely tailored to your syllabus.</p>
+          <p className='hero-left-h3'>Personalised AI Tutor Tailored For Indian Syllabus.</p>
         </div>
         <div className='hero-left-btn'>
           <Link to="/standard" className='login-link'><div>Get Started</div></Link>
