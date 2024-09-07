@@ -6,6 +6,7 @@ import Chat from './components/ChatInterface/Chat'; // Ensure this path is corre
 import Home from './components/Home/Home';
 import LoginSignup from './components/SignUp/SignUp';
 import Standard from './components/Standard/Standard';
+import ContactUs from './components/ContactUs/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/chat' element={<Chat />} />
           <Route path='/login' element={<LoginSignup />} />
           <Route path='/standard' element={<Standard />} />
+          <Route path='/contact' element={<ContactUs />} />
         </Routes>
       </BrowserRouter>
     </div>

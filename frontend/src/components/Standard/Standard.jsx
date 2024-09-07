@@ -32,8 +32,7 @@ function Standard() {
             <div
               key={standard.id}
               className="standard-box"
-              onClick={() => toComponent(standard.id)}
-            >
+              onClick={() => toComponent(standard.id)}>
               <img src={standard.imgSrc} alt={standard.label} />
               <span>{standard.label}</span>
             </div>

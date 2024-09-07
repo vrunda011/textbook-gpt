@@ -1,0 +1,180 @@
+/* Import fonts from your main CSS if needed */
+.contact-section {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 150px;
+    margin-top: -200px;
+  }
+  
+  .contact-left h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 490;
+    font-style: normal;
+    margin: 0px;
+    font-size: 50px;
+    margin-top: -10px;
+  }
+  
+  .contact-left p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-info-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .contact-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-right h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 490;
+    font-style: normal;
+    margin: 0px;
+    font-size: 30px;
+    margin-top: -100px;
+  }
+  
+  .contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-right form label {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+  }
+  
+  .contact-right form input,
+  .contact-right form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-right form button {
+    background-color: #ffac81;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1280px) {
+    .contact-left {
+      margin-left: 100px;
+      margin-top: -150px;
+    }
+  
+    .contact-left h2 {
+      font-size: 45px;
+    }
+  
+    .contact-left p {
+      font-size: 18px;
+    }
+  
+    .contact-right h3 {
+      font-size: 25px;
+    }
+  
+    .contact-right form label {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 1040px) {
+    .contact-left {
+      margin-left: 70px;
+      margin-top: -100px;
+    }
+  
+    .contact-left h2 {
+      font-size: 40px;
+    }
+  
+    .contact-right h3 {
+      font-size: 20px;
+    }
+  
+    .contact-right form label {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .contact-section {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .contact-left {
+      width: 90%;
+      margin-left: 0;
+      margin-top: 0;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .contact-left h2 {
+      font-size: 35px;
+    }
+  
+    .contact-right {
+      margin-top: 20px;
+    }
+  
+    .contact-right form {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .contact-left h2 {
+      font-size: 30px;
+    }
+  
+    .contact-right h3 {
+      font-size: 25px;
+    }
+  
+    .contact-right form label {
+      font-size: 14px;
+    }
+  }
