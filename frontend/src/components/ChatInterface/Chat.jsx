@@ -2,7 +2,7 @@ import './Chat.css';
 import {useLocation} from 'react-router-dom';
 import React, { useState, useRef, useEffect } from 'react';
 
-const chatApiBaseUrl =  "http://localhost:5000/api/chat/"
+const chatApiBaseUrl =  "http://127.0.0.1:5000/api/chat/"
 
 function Chat(props) {
   const location = useLocation();
