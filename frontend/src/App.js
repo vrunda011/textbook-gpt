@@ -2,10 +2,13 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Nevbar/Navbar'; // Ensure this path is correct
-import Home from './pages/Home/Home';
-import Chat from './pages/Chat/Chat'; // Ensure this path is correct
+import Chat from './components/ChatInterface/Chat'; // Ensure this path is correct
+import Home from './components/Home/Home';
 import LoginSignup from './components/SignUp/SignUp';
 import Standard from './components/Standard/Standard';
+import ContactUs from './components/ContactUS/Contact';
+import AboutUs from './components/AboutUs/About';
+
 
 function App() {
   return (
@@ -17,6 +20,8 @@ function App() {
           <Route path='/chat' element={<Chat />} />
           <Route path='/login' element={<LoginSignup />} />
           <Route path='/standard' element={<Standard />} />
+          <Route path='/contact' element={<ContactUs />} />
+          <Route path='/about' element={<AboutUs />} />
         </Routes>
       </BrowserRouter>
     </div>

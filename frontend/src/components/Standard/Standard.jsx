@@ -9,7 +9,7 @@ function Standard() {
   useEffect(() => {
     const standardsArray = [];
     for (let i = 1; i <= 12; i++) {
-      const imgSrc = `/images/standard${i}.jpg`;
+      const imgSrc = `/images/standard${i}.gif`;
       standardsArray.push({
         id: i,
         imgSrc,
@@ -26,8 +26,7 @@ function Standard() {
   return (
     <div className='container home-container'>
       <div className="home-text">
-        <h1>Welcome to Textbook GPT</h1>
-        <p>Your personalized AI tutor for seamless learning experiences.</p>
+        <h1>Choose Your Standard!</h1>
         <div className="standards-grid">
           {standards.map((standard) => (
             <div

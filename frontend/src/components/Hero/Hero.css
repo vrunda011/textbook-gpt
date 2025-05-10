@@ -19,18 +19,26 @@
 }
 
 .hero-left-start {
-    color: orange;
+    color: #27739e;
     font-weight: 700;
     font-size: 20px;
 }
 
 .hero-left-h1 {
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 490;
     font-style: normal;
     margin: 0px;
-    font-size: 60px;
+    font-size: 50px;
     margin-top: -10px;
+}
+.hero-left-h2 {
+    font-family: "Poppins", italic;
+    color: rgb(27, 143, 172);
+    margin: 0px;
+    font-size: 30px;
+    margin-top: -10px;
+    font-style: italic;
 }
 
 .hero-left-second {
@@ -51,17 +59,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(255, 217, 0);
+    background: #ffac81;
     width: 150px;
     height: 50px;
     font-size: 20px;
     border-radius: 20px;
 }
 
-.hero-right {
-    margin-top: 50px;
-    margin-right: -50px;
-}
 
 .hero-right-img {
     margin-right: -50px;
@@ -90,7 +94,7 @@
 
 .hero-right-bg-1 {
     position: relative;
-    background: rgba(255, 196, 0, 0.716);
+    background: #ffac81;
     height: 180px;
     width: 180px;
     border-radius: 100px;
@@ -101,7 +105,7 @@
 
 .hero-right-bg-2 {
     position: relative;
-    background: rgba(0, 225, 255, 0.658);
+    background: #72ddf7;
     width: 100px;
     height: 100px;
     border-radius: 50px;
