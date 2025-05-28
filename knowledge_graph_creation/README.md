@@ -1,7 +1,12 @@
 # 🎓 Knowledge Graph Creation
 
-![Neo4j Logo](./neo4j.png)
-*Exported Neo4j database dump for the **Textbook-GPT** project.*
+<p align="center">
+<img src="./neo4j.png" alt="Neo4j Logo" style="width: 50%; max-width: 400px;" />
+</p>
+
+<p align="center">
+  <em>Exported Neo4j database dump for the <strong>Textbook-GPT</strong> project.</em>
+</p>
 
 ---
 
